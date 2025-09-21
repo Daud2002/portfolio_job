@@ -294,10 +294,10 @@ function ContactSection() {
             </Card>
 
             <Card className="p-4 sm:p-6 bg-[#0ff]/5 border border-[#0ff]/80">
-              <h3 className="text-[#0ff] sm:text-lg mb-2">Why Work With Me?</h3>
+              <h3 className="text-[#0ff] sm:text-lg mb-2">Why Choose Me?</h3>
               <div className="space-y-3">
                 {[
-                  "2+ years of professional experience",
+                  "1 years of professional experience",
                   "Full-stack development expertise",
                   "Agile development methodologies",
                   "Strong communication skills",
@@ -510,6 +510,87 @@ function SkillsSection() {
   );
 }
 
+function ExperienceSection() {
+  const experiences = [
+    {
+      company: "SeveStacks",
+      location: "Lahore, Pakistan",
+      roles: [
+        {
+          role: "Associate Software Engineer",
+          duration: "Feb 2025 - Present",
+          description: [
+            "Currently handling three projects simultaneously, balancing priorities and ensuring steady progress across all deliverables.",
+            "Contributed to the development of a large-scale messaging platform under senior supervision, gaining hands-on experience in collaborative software delivery.",
+            "Built a HIPAA-compliant doctors’ portal and admin dashboard to securely manage patient records, integrating ChatGPT API for intelligent support, prompt processing, and protected streaming responses.",
+            "Customized Bolt.dev for a client by integrating advanced AI capabilities with OpenAI API, AWS Bedrock, and Groq. Implemented real-time chatbot interactions and AI-driven workflows with dynamic content rendering using React Markdown, token streaming, and conditional logic.",
+            "Developed a full-featured society management system to handle payments, expenses, and operational workflows, aimed at improving transparency and automation for community administration.",
+            "Contributing to an ongoing healthcare project focused on Alzheimer’s disease, supporting innovation in medical research and patient care solutions.",
+            "Maintained clean Git workflows with branching, pull requests, reviews, and conflict resolution in Agile teams, ensuring smooth collaboration and version control.",
+            "Continuously optimizing performance, accessibility, and responsiveness across applications to ensure seamless user experience on all devices."
+          ]
+        },
+        {
+          role: "Software Engineer Intern",
+          duration: "Dec 2024 - Jan 2025",
+          description: [
+            "Assisted in developing and testing web applications using ReactJS and Express, gaining hands-on experience with the MERN stack.",
+            "Collaborated with senior developers on debugging, feature enhancements, and API integrations for real-world projects.",
+            "Learned Agile development practices by participating in daily standups, sprint planning, and code reviews.",
+            "Contributed to building reusable UI components and improving front-end responsiveness across devices.",
+            "Worked with Git for version control, practicing branching, pull requests, and conflict resolution.",
+            "Explored basic deployment workflows and environment configuration to understand production readiness.",
+            "Gained exposure to real-world problem-solving in client-driven projects while improving coding standards and documentation."
+          ]
+        },
+      ]
+    }
+  ];
+
+  return (
+    <div className="p-4 sm:p-6 lg:p-8">
+      <div className="max-w-4xl mx-auto">
+        <h1 className="text-2xl sm:text-3xl text-[#0ff]">Experience</h1>
+        <div className="h-[2px] w-36 bg-[linear-gradient(90deg,rgba(0,255,255,.15)_0%,#0ff_50%,rgba(0,255,255,.15)_100%)] rounded-full shadow-[0_0_8px_rgba(0,255,255,.4)]" />
+
+        <div className="mt-12 space-y-8">
+          {experiences.map((exp, index) => (
+            <div key={index} className="bg-[#0ff]/5 border border-[#0ff]/20 rounded-lg p-6 transition-all duration-300 hover:border-[#0ff]/40 hover:bg-[#0ff]/10">
+              <div className="flex flex-col sm:flex-row justify-between sm:items-center mb-6">
+                <h2 className="text-xl font-semibold text-[#0ff]">{exp.company}</h2>
+                <p className="text-sm text-[#0ff]/60 mt-1 sm:mt-0">{exp.location}</p>
+              </div>
+
+              <div className="space-y-8">
+                {exp.roles.map((role, roleIndex) => (
+                  <div key={roleIndex} className="relative pl-8">
+                    <div className="absolute top-1.5 -left-1.5 w-3 h-3 rounded-full bg-[#0ff] shadow-[0_0_10px_rgba(0,255,255,0.6)]"></div>
+                    {roleIndex < exp.roles.length - 1 && (
+                      <div className="absolute top-4 -left-0 w-px h-[165%] bg-[#0ff]/30"></div>
+                    )}
+                    <div className="flex flex-col sm:flex-row justify-between sm:items-center">
+                      <h3 className="text-lg text-[#0ff]/90 font-medium">{role.role}</h3>
+                      <p className="text-xs text-[#0ff]/50 mt-1 sm:mt-0">{role.duration}</p>
+                    </div>
+                    <ul className="mt-3 space-y-2 text-sm text-[#0ff]/70">
+                      {role.description.map((desc, i) => (
+                        <li key={i} className="flex items-start">
+                          <span className="text-[#0ff] mr-2 mt-1">&#8227;</span>
+                          <span>{desc}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                ))}
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+  );
+}
+
 export function SiteFrame() {
   const [tab, setTab] = useState<TabKey>('portfolio')
 
@@ -533,10 +614,11 @@ export function SiteFrame() {
           >
             {tab === 'portfolio' && <PortfolioSection />}
             {tab === 'skills' && <SkillsSection />}
+            {tab === 'experience' && <ExperienceSection />}
             {tab === 'contactus' && <ContactSection />}
           </motion.div>
         </AnimatePresence>
       </div>
     </div>
   )
-} 
+}

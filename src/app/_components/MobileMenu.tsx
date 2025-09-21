@@ -1,5 +1,6 @@
 'use client';
 
+import { Download } from 'lucide-react';
 import { redirect } from 'next/navigation';
 import { useEffect, useState } from 'react';
 
@@ -108,23 +109,21 @@ export function MobileMenu() {
                         </div>
 
                         <p className="text-xs text-neutral-400 text-center">
-                            MERN Stack | React Native | Next.js | Nest.js | Node.js & TypeScript
+                            MERN Stack | Next.js | Nest.js | Node.js | TypeScript | Postgresql & Mongodb 
                         </p>
 
                         <p className="text-sm text-neutral-300/90 leading-relaxed text-center">
-                            Problem-solving focused engineer with 2+ years of experience, delivering clean, maintainable solutions on time and with clear communication you can trust.
+                            Problem-solving focused engineer with 1 years of experience, delivering clean, maintainable solutions on time and with clear communication you can trust.
                         </p>
 
                         <div className="pt-2">
                             <a
-                                href="https://www.upwork.com/freelancers/~011c6281fefdb34981"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="px-6 py-2 rounded-md bg-[#0ff] text-black border border-[#0ff] hover:opacity-90 focus:outline-none focus-visible:ring-2 focus-visible:ring-[#0ff]/60 flex items-center gap-2"
+                                href="/Daud_Mir.pdf"
+                                download="Daud_Mir_Resume.pdf"
+                                className="px-6 py-2 rounded-md bg-[#0ff] text-black border border-[#0ff] hover:opacity-90 focus:outline-none focus-visible:ring-2 focus-visible:ring-[#0ff]/60 flex items-center justify-center gap-3"
                                 onClick={() => setIsOpen(false)}
                             >
-                                <img src="/upwork.png" alt="Upwork" className="h-5 w-auto" />
-                                <span>work with me</span>
+                                <Download width={20} height={20}/><span>Download resume</span>
                             </a>
                         </div>
                     </div>

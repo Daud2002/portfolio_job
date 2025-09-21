@@ -2,11 +2,12 @@
 
 import { motion } from 'framer-motion'
 
-export type TabKey = 'portfolio' | 'skills' | 'education' | 'contactus'
+export type TabKey = 'portfolio' | 'skills' | 'experience' | 'contactus'
 
 const tabs: Array<{ key: TabKey; label: string }> = [
   { key: 'portfolio', label: 'Portfolio' },
   { key: 'skills', label: 'Skills' },
+  { key: 'experience', label: 'Experience' },
   { key: 'contactus', label: 'Contact Us' },
 ]
 
