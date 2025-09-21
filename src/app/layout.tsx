@@ -67,7 +67,7 @@ export default function RootLayout({
                   className="px-6 py-2 rounded-md bg-[#0ff]/20 border-none text-[#0ff] border border-[#0ff] hover:opacity-90 focus:outline-none focus-visible:ring-2 focus-visible:ring-[#0ff]/60 flex items-center gap-1"
                 >
                   <img src="/upwork.png" alt="Upwork" className="h-5 w-auto" />
-                  <span>works with me</span>
+                  <span>work with me</span>
                 </a>
               </div>
             </div>

@@ -79,7 +79,7 @@ function Sidebar({ isOpen, onClose }: { isOpen: boolean; onClose: () => void }) 
               onClick={() => redirect('https://www.upwork.com/freelancers/~011c6281fefdb34981')}
             >
               <img src="/upwork.png" alt="Upwork" className="h-5 w-auto" />
-              <span>works with me</span>
+              <span>work with me</span>
             </button>
           </div>
         </div>
