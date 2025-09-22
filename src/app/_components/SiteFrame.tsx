@@ -50,7 +50,7 @@ function PortfolioSection() {
   const projects: Array<{ name: string; description: string; stacks: string[]; images: string[] }> = [
     {
       name: 'Neon IQ',
-      description: 'A real-time AI interaction platform that streams responses from the Groq API through an Express backend. I developed the Next.js frontend and Express backend, enabling seamless live response streaming for an engaging user experience.',
+      description: 'A real-time AI interaction platform that streams responses from the Groq API through an Express backend. I developed the Next.js frontend and Express backend, enabling seamless live response streaming for an engaging user experience',
       stacks: ['Next.js', 'Express.js', 'Tailwind CSS', 'MongoDB', 'Groq AI', 'Framer Motion'],
       images: [
         nq_1.src,
