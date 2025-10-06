@@ -292,7 +292,7 @@ function ContactSection() {
                 </div>
               </div>
             </Card>
-
+ 
             <Card className="p-4 sm:p-6 bg-[#0ff]/5 border border-[#0ff]/80">
               <h3 className="text-[#0ff] sm:text-lg mb-2">Why Choose Me?</h3>
               <div className="space-y-3">
