@@ -57,7 +57,7 @@ export default function RootLayout({
               </p>
 
               <p className="text-sm text-neutral-300/90 leading-relaxed">
-                Problem-solving focused engineer with 1 years of experience, delivering clean, maintainable solutions on time and with clear communication you can trust.
+                Problem-solving focused engineer with 1+ years of experience, delivering clean, maintainable solutions on time and with clear communication you can trust.
               </p>
 
               <div className="pt-2">

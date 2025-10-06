@@ -297,7 +297,7 @@ function ContactSection() {
               <h3 className="text-[#0ff] sm:text-lg mb-2">Why Choose Me?</h3>
               <div className="space-y-3">
                 {[
-                  "1 years of professional experience",
+                  "1+ years of professional experience",
                   "Full-stack development expertise",
                   "Agile development methodologies",
                   "Strong communication skills",
@@ -541,6 +541,21 @@ function ExperienceSection() {
             "Worked with Git for version control, practicing branching, pull requests, and conflict resolution.",
             "Explored basic deployment workflows and environment configuration to understand production readiness.",
             "Gained exposure to real-world problem-solving in client-driven projects while improving coding standards and documentation."
+          ]
+        },
+      ]
+    },
+    {
+      company: "Ahmasoft",
+      location: "Lahore, Pakistan",
+      roles: [
+        {
+          role: "Frontend Developer Intern",
+          duration: "Jun 2024 - Aug 2024",
+          description: [
+            "Developed responsive and high - performance web applications using React.js, Next.js, and modern JavaScript",
+            "Translated UI / UX designs into pixel - perfect, cross - browser - compatible interfaces",
+            "Collaborated on API integrations and optimized client - side performance for smoother, faster user experiences"
           ]
         },
       ]
