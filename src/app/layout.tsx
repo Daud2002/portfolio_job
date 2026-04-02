@@ -43,12 +43,12 @@ export default function RootLayout({
                 <div className="ring-pulse anim-delay-600"></div>
                 <div className="ring-pulse anim-delay-900"></div>
                 <div className="absolute inset-0 rounded-full overflow-hidden ring-2 ring-[#0ff]/60">
-                  <img src="/profile_img.jpg" alt="Profile" className="w-full h-full object-cover" />
+                  <img src="/profile_img.png" alt="Profile" className="w-full h-full object-cover" />
                 </div>
               </div>
 
               <div>
-                <h1 className="text-xl font-semibold tracking-tight">Daud Mir</h1>
+                <h1 className="text-xl font-semibold tracking-tight text-white/70">Daud Mir</h1>
                 <p className="text-[#0ff] text-md uppercase tracking-wider mt-1">Software Engineer</p>
               </div>
 
@@ -57,7 +57,7 @@ export default function RootLayout({
               </p>
 
               <p className="text-sm text-neutral-300/90 leading-relaxed">
-                Problem-solving focused engineer with 1+ years of experience, delivering clean, maintainable solutions on time and with clear communication you can trust.
+                Problem-solving focused engineer with 1.5+ years of experience, delivering clean, maintainable solutions on time and with clear communication you can trust.
               </p>
 
               <div className="pt-2">

@@ -32,11 +32,11 @@ export function MobileMenu() {
                 <div className="flex items-center gap-3">
                     <div className="relative w-10 h-10">
                         <div className="absolute inset-0 rounded-full overflow-hidden ring-2 ring-[#0ff]/60">
-                            <img src="/profile_img.jpg" alt="Profile" className="w-full h-full object-cover" />
+                            <img src="/profile_img.png" alt="Profile" className="w-full h-full object-cover" />
                         </div>
                     </div>
                     <div>
-                        <h1 className="text-lg font-semibold tracking-tight text-[#0ff]">Daud Mir</h1>
+                        <h1 className="text-lg font-semibold tracking-tight text-white">Daud Mir</h1>
                         <p className="text-[#0ff]/50 text-xs uppercase tracking-wider">Software Engineer</p>
                     </div>
                 </div>
@@ -99,12 +99,12 @@ export function MobileMenu() {
                             <div className="ring-pulse anim-delay-600"></div>
                             <div className="ring-pulse anim-delay-900"></div>
                             <div className="absolute inset-0 rounded-full overflow-hidden ring-2 ring-[#0ff]/60">
-                                <img src="/profile_img.jpg" alt="Profile" className="w-full h-full object-cover" />
+                                <img src="/profile_img.png" alt="Profile" className="w-full h-full object-cover" />
                             </div>
                         </div>
 
                         <div className='mt-10'>
-                            <h1 className="text-xl font-semibold tracking-tight text-[#0ff]">Daud Mir</h1>
+                            <h1 className="text-xl font-semibold tracking-tight text-white">Daud Mir</h1>
                             <p className="text-[#0ff]/70 text-xs uppercase tracking-wider mt-1">Software Engineer</p>
                         </div>
 
@@ -113,7 +113,7 @@ export function MobileMenu() {
                         </p>
 
                         <p className="text-sm text-neutral-300/90 leading-relaxed text-center">
-                            Problem-solving focused engineer with 1+ years of experience, delivering clean, maintainable solutions on time and with clear communication you can trust.
+                            Problem-solving focused engineer with 1.5+ years of experience, delivering clean, maintainable solutions on time and with clear communication you can trust.
                         </p>
 
                         <div className="pt-2">

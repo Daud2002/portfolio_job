@@ -28,52 +28,63 @@ import sms_8 from "../../assets/sms/sms_8.png"
 import sms_9 from "../../assets/sms/sms_9.png"
 import sms_10 from "../../assets/sms/sms_10.png"
 import sms_11 from "../../assets/sms/sms_11.png"
-import as_1 from "../../assets/as/as_1.png"
-import as_2 from "../../assets/as/as_2.png"
-import as_3 from "../../assets/as/as_3.png"
-import as_4 from "../../assets/as/as_4.png"
-import nq_1 from "../../assets/nq/nq_1.png"
-import nq_2 from "../../assets/nq/nq_2.png"
-import nq_3 from "../../assets/nq/nq_3.png"
-import nq_4 from "../../assets/nq/nq_4.png"
-import nq_5 from "../../assets/nq/nq_5.png"
-import nq_6 from "../../assets/nq/nq_6.png"
-import nq_7 from "../../assets/nq/nq_7.png"
 import link_bot from "../../assets/bot/bot.png"
-import stripe_1 from "../../assets/stripe/stripe_1.png"
-import stripe_1_5 from "../../assets/stripe/stripe_1.5.png"
-import stripe_2 from "../../assets/stripe/stripe_2.png"
-import stripe_3 from "../../assets/stripe/stripe_3.png"
-import stripe_4 from "../../assets/stripe/stripe_4.png"
+import sai_1 from "../../assets/sanoteai/Sanote_ai_1.png"
+import sai_2 from "../../assets/sanoteai/sanote_ai_2.png"
+import sai_3 from "../../assets/sanoteai/sanote_ai_3.png"
+import baby_1 from "../../assets/baby/baby-1.png"
+import baby_2 from "../../assets/baby/baby-2.png"
+import tnt_1 from "../../assets/tapntrade/tapntrade-1.png"
+import tnt_2 from "../../assets/tapntrade/tapntrade-2.png"
+import tnt_3 from "../../assets/tapntrade/tapntrade-3.png"
+import tnt_4 from "../../assets/tapntrade/tapntrade-4.png"
+import tnt_5 from "../../assets/tapntrade/tapntrade-5.png"
+import tnt_6 from "../../assets/tapntrade/tapntrade-6.png"
+
 
 function PortfolioSection() {
   const projects: Array<{ name: string; description: string; stacks: string[]; images: string[] }> = [
     {
-      name: 'Neon IQ',
-      description: 'A real-time AI interaction platform that streams responses from the Groq API through an Express backend. I developed the Next.js frontend and Express backend, enabling seamless live response streaming for an engaging user experience',
-      stacks: ['Next.js', 'Express.js', 'Tailwind CSS', 'MongoDB', 'Groq AI', 'Framer Motion'],
+      name: 'Sanote AI',
+      description: `Sanote AI is build to assist the medical student for helping in their exams, Major focus of this deliverable is to save the student's time, Focus on what actually matters and Learn the smart way, not the hard way.`,
+      stacks: ['Next.js', 'Express.js', 'PostgreSQL', 'OpenAi'],
       images: [
-        nq_1.src,
-        nq_2.src,
-        nq_3.src,
-        nq_4.src,
-        nq_5.src,
-        nq_6.src,
-        nq_7.src
+        sai_1.src,
+        sai_2.src,
+        sai_3.src,
       ],
     },
     {
-      name: 'Link & voice message detector bot',
-      description: 'An intelligent moderation bot for large communities that automatically detects and removes voice messages and links. It issues two warnings immediately to violators and removes them on the third offense. The bot is currently managing 6 groups with 1000+ members each, ensuring a safe, spam-free, and well-organized chat environment.',
-      stacks: ['Whatsapp-web', 'Puppeteer', 'node.js'],
+      name: 'Agh Labs',
+      description: 'A healthcare platform built with strict HIPAA compliance, ensuring secure handling of sensitive medical data. I developed both the frontend in React and the backend with Express, integrating OpenAI to provide prompt, intelligent responses. The system delivers a secure, reliable, and user-friendly experience tailored for medical professionals in the US.',
+      stacks: ['React.js', 'Express.js', 'MongoDb', 'OpenAi', 'HIPAA compliance'],
       images: [
-        link_bot.src
+        agh1.src,
+        agh2.src,
+        agh3.src,
+        agh_db_1.src,
+        agh_db_2.src,
+        agh_db_3.src,
+        main.src,
+      ],
+    },
+    {
+      name: 'TapNtrade',
+      description: '',
+      stacks: ['React.js', 'Next.js', 'Postgresql', 'AWS EC2'],
+      images: [
+        tnt_1.src,
+        tnt_2.src,
+        tnt_3.src,
+        tnt_4.src,
+        tnt_5.src,
+        tnt_6.src
       ],
     },
     {
       name: 'Society Management System',
       description: 'A complete society management platform for handling residents, houses, expenses, fees, and servants. I built the system with automated arrear and payment generation using cron jobs and implemented role-based access for admins and residents, ensuring transparent and secure financial tracking.',
-      stacks: ['Next.js', 'Nest.js', 'React Query', 'Cron jobs', 'PostgreSQL', 'Tailwind CSS'],
+      stacks: ['Next.js', 'Nest.js', 'React Query', 'Cron jobs', 'PostgreSQL'],
       images: [
         sms_1.src,
         sms_2.src,
@@ -89,47 +100,20 @@ function PortfolioSection() {
       ],
     },
     {
-      name: 'Agh Labs',
-      description: 'A healthcare platform built with strict HIPAA compliance, ensuring secure handling of sensitive medical data. I developed both the frontend in React and the backend with Express, integrating OpenAI to provide prompt, intelligent responses. The system delivers a secure, reliable, and user-friendly experience tailored for medical professionals in the US.',
-      stacks: ['React.js', 'Express.js', 'MongoDb', 'OpenAi', 'Tailwind CSS'],
+      name: 'Kinder Cart',
+      description: 'KinderCart is a smart price comparison web app that helps parents find the best deals on baby products across major retailers like Amazon, Walmart, and Target. It uses real-time data via SERP API and a Supabase-powered backend to deliver fast, accurate comparisons in a clean, user-friendly interface, enabling users to quickly explore options, compare prices, and make informed buying decisions with a focus on performance and scalability.',
+      stacks: ['React.js', 'Supabase', 'Serp Api'],
       images: [
-        agh1.src,
-        agh2.src,
-        agh3.src,
+        baby_1.src,
+        baby_2.src,
       ],
     },
     {
-      name: 'Dashboard - Agh Labs',
-      description: 'An admin and management dashboard for the Aghlab Health platform, designed to streamline operations. It provides features for managing user profiles, adding and customizing prompts for the OpenAI model, and tracking individual usage through dynamic charts. I developed the dashboard using React and Express, ensuring a secure and efficient management experience.',
-      stacks: ['Next.js', 'Express', 'TypeScript', 'MongoDb', 'Tailwind CSS'],
+      name: 'Link & voice message detector bot',
+      description: 'An intelligent moderation bot for large communities that automatically detects and removes voice messages and links. It issues two warnings immediately to violators and removes them on the third offense. The bot is currently managing 6 groups with 1000+ members each, ensuring a safe, spam-free, and well-organized chat environment.',
+      stacks: ['Whatsapp-web', 'Puppeteer', 'node.js'],
       images: [
-        main.src,
-        agh_db_1.src,
-        agh_db_2.src,
-        agh_db_3.src,
-      ],
-    },
-    {
-      name: 'Stripe',
-      description: 'A complete credit-based system with Stripe integration for subscriptions and custom credit purchases. Users can track their credit history upon login, while the admin dashboard provides full control over plans, pricing, and features, synced directly with Stripe. The dashboard also offers detailed insights into user spending and subscription details, ensuring transparent and efficient management.',
-      stacks: ['Next.js', 'Appwrite', 'Stripe', 'Webhook'],
-      images: [
-        stripe_1.src,
-        stripe_1_5.src,
-        stripe_2.src,
-        stripe_3.src,
-        stripe_4.src
-      ],
-    },
-    {
-      name: 'Ahmasoft',
-      description: 'A startup website built to showcase services in data scraping, automation, and data visualization. I developed the site with a modern, responsive design to effectively present Ahmasoft’s expertise and provide a professional online presence for client outreach.',
-      stacks: ['React.js', 'Tailwind CSS', 'Framer Motion'],
-      images: [
-        as_1.src,
-        as_2.src,
-        as_3.src,
-        as_4.src
+        link_bot.src
       ],
     }
   ]
@@ -138,11 +122,7 @@ function PortfolioSection() {
 
   return (
     <section>
-      <div className="mb-10">
-        <h2 className="text-2xl font-semibold tracking-tight text-[#0ff]">Portfolio</h2>
-        <div className="h-[2px] w-24 bg-[linear-gradient(90deg,rgba(0,255,255,.15)_0%,#0ff_50%,rgba(0,255,255,.15)_100%)] rounded-full shadow-[0_0_8px_rgba(0,255,255,.4)]" />
-      </div>
-      <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-10">
         {projects.map((p, i) => (
           <button
             key={p.name}
@@ -251,9 +231,6 @@ function ContactSection() {
   return (
     <div className="p-4 sm:p-6 lg:p-8">
       <div className="max-w-4xl mx-auto">
-        <h1 className="text-2xl sm:text-3xl text-[#0ff]">Get In Touch</h1>
-        <div className="h-[2px] w-42 bg-[linear-gradient(90deg,rgba(0,255,255,.15)_0%,#0ff_50%,rgba(0,255,255,.15)_100%)] rounded-full shadow-[0_0_8px_rgba(0,255,255,.4)]" />
-
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 mt-10">
           {/* Contact Information */}
@@ -292,12 +269,12 @@ function ContactSection() {
                 </div>
               </div>
             </Card>
- 
+
             <Card className="p-4 sm:p-6 bg-[#0ff]/5 border border-[#0ff]/80">
               <h3 className="text-[#0ff] sm:text-lg mb-2">Why Choose Me?</h3>
               <div className="space-y-3">
                 {[
-                  "1+ years of professional experience",
+                  "1.5+ years of professional experience",
                   "Full-stack development expertise",
                   "Agile development methodologies",
                   "Strong communication skills",
@@ -430,25 +407,37 @@ function ContactSection() {
 function SkillsSection() {
   const skillCategories = [
     {
+      title: "Languages",
+      skills: [
+        { name: "JavaScript", level: 85 },
+        { name: "TypeScript", level: 80 }
+      ]
+    },
+    {
       title: "Frontend Development",
       skills: [
-        { name: "React", level: 95 },
-        { name: "TypeScript", level: 90 },
-        { name: "Next.js", level: 85 },
-        { name: "Vue.js", level: 80 },
+        { name: "React.js", level: 95 },
+        { name: "Next.js", level: 95 },
         { name: "Tailwind CSS", level: 90 },
-        { name: "HTML/CSS", level: 95 }
+        { name: "ShadCN UI", level: 90 }
       ]
     },
     {
       title: "Backend Development",
       skills: [
-        { name: "Node.js", level: 90 },
-        { name: "SQL", level: 90 },
-        { name: "Express.js", level: 88 },
+        { name: "Supabase", level: 90 },
+        { name: "Express.js", level: 90 },
+        { name: "Nest.js", level: 85 },
         { name: "PostgreSQL", level: 90 },
         { name: "MongoDB", level: 80 },
-        { name: "REST APIs", level: 92 }
+      ]
+    },
+        {
+      title: "Cloud Technologies",
+      skills: [
+        { name: "AWS EC2", level: 90 },
+        { name: "AWS S3", level: 90 },
+        { name: "AWS Bedrock", level: 80 }
       ]
     },
     {
@@ -466,9 +455,6 @@ function SkillsSection() {
         { name: "Stripe", level: 85 },
         { name: "React Query", level: 90 },
         { name: "Git", level: 90 },
-        { name: "Docker", level: 85 },
-        { name: "AWS", level: 70 },
-        { name: "Beekeeper", level: 95 }
       ]
     }
   ];
@@ -476,8 +462,6 @@ function SkillsSection() {
   return (
     <div className="p-4 sm:p-6 lg:p-8">
       <div className="max-w-4xl mx-auto">
-        <h1 className="text-2xl sm:text-3xl text-[#0ff]">Skills</h1>
-        <div className="h-[2px] w-18 bg-[linear-gradient(90deg,rgba(0,255,255,.15)_0%,#0ff_50%,rgba(0,255,255,.15)_100%)] rounded-full shadow-[0_0_8px_rgba(0,255,255,.4)]" />
 
         <div className="space-y-12 mt-10">
           {skillCategories.map((category, index) => (
@@ -518,31 +502,20 @@ function ExperienceSection() {
       roles: [
         {
           role: "Associate Software Engineer",
-          duration: "Feb 2025 - Present",
+          duration: "Dec 2024 - Present",
           description: [
-            "Currently handling three projects simultaneously, balancing priorities and ensuring steady progress across all deliverables.",
-            "Contributed to the development of a large-scale messaging platform under senior supervision, gaining hands-on experience in collaborative software delivery.",
-            "Built a HIPAA-compliant doctors’ portal and admin dashboard to securely manage patient records, integrating ChatGPT API for intelligent support, prompt processing, and protected streaming responses.",
-            "Customized Bolt.dev for a client by integrating advanced AI capabilities with OpenAI API, AWS Bedrock, and Groq. Implemented real-time chatbot interactions and AI-driven workflows with dynamic content rendering using React Markdown, token streaming, and conditional logic.",
-            "Developed a full-featured society management system to handle payments, expenses, and operational workflows, aimed at improving transparency and automation for community administration.",
-            "Contributing to an ongoing healthcare project focused on Alzheimer’s disease, supporting innovation in medical research and patient care solutions.",
-            "Maintained clean Git workflows with branching, pull requests, reviews, and conflict resolution in Agile teams, ensuring smooth collaboration and version control.",
-            "Continuously optimizing performance, accessibility, and responsiveness across applications to ensure seamless user experience on all devices."
+            "Developed an AI-powered medical education application for students, delivering structured topic results including Overview, Key Points, Causes, Signs & Symptoms, and Diagnosis.",
+            "Designed and developed a fully functional AI-powered chat test window for the admin panel of a mobile application.",
+            "Developed an AI-powered smart search feature enabling users to query in natural language and receive dynamic, filter-based search results, improving search accuracy by ~80%.",
+            "Delivered a HIPAA-compliant doctor's portal and admin dashboard for secure patient record management.",
+            "Implemented end-to-end encryption and decryption of API responses using Supabase as the backend, reducing data breach risk by ~90% which ensures protection of sensitive user information.",
+            "Integrated TanStack Query to replace manual data fetching, reducing duplicate API calls by ~80% and improving Ul responsiveness by ~30%",
+            "Managed AWS EC2 deployment and maintain production server environments.",
+            "Built a baby product price comparison application using SerpAPI and Supabase with real-time data retrieval",
+            "Implemented end-to-end Stripe payment flow with 3 paid plans, Stripe webhooks, and a custom user credits purchase system.",
+            "Maintained Git workflows including feature branching, pull requests, code reviews, and conflict resolution."
           ]
-        },
-        {
-          role: "Software Engineer Intern",
-          duration: "Dec 2024 - Jan 2025",
-          description: [
-            "Assisted in developing and testing web applications using ReactJS and Express, gaining hands-on experience with the MERN stack.",
-            "Collaborated with senior developers on debugging, feature enhancements, and API integrations for real-world projects.",
-            "Learned Agile development practices by participating in daily standups, sprint planning, and code reviews.",
-            "Contributed to building reusable UI components and improving front-end responsiveness across devices.",
-            "Worked with Git for version control, practicing branching, pull requests, and conflict resolution.",
-            "Explored basic deployment workflows and environment configuration to understand production readiness.",
-            "Gained exposure to real-world problem-solving in client-driven projects while improving coding standards and documentation."
-          ]
-        },
+        }
       ]
     },
     {
@@ -550,12 +523,12 @@ function ExperienceSection() {
       location: "Lahore, Pakistan",
       roles: [
         {
-          role: "Frontend Developer Intern",
-          duration: "Jun 2024 - Aug 2024",
+          role: "Frontend Developer",
+          duration: "Sep 2024 - Dec 2024",
           description: [
-            "Developed responsive and high - performance web applications using React.js, Next.js, and modern JavaScript",
-            "Translated UI / UX designs into pixel - perfect, cross - browser - compatible interfaces",
-            "Collaborated on API integrations and optimized client - side performance for smoother, faster user experiences"
+            "Developed and delivered 2+ production-ready web applications using React.js and NextJS within a 3-month tenure",
+            "Integrated Stripe payment gateway, implementing end-to-end payment flows based on client requirements",
+            "Consistently met project deadlines, contributing to on-time delivery across all assigned projects"
           ]
         },
       ]
@@ -565,10 +538,8 @@ function ExperienceSection() {
   return (
     <div className="p-4 sm:p-6 lg:p-8">
       <div className="max-w-4xl mx-auto">
-        <h1 className="text-2xl sm:text-3xl text-[#0ff]">Experience</h1>
-        <div className="h-[2px] w-36 bg-[linear-gradient(90deg,rgba(0,255,255,.15)_0%,#0ff_50%,rgba(0,255,255,.15)_100%)] rounded-full shadow-[0_0_8px_rgba(0,255,255,.4)]" />
 
-        <div className="mt-12 space-y-8">
+        <div className="mt-10 space-y-8">
           {experiences.map((exp, index) => (
             <div key={index} className="bg-[#0ff]/5 border border-[#0ff]/20 rounded-lg p-6 transition-all duration-300 hover:border-[#0ff]/40 hover:bg-[#0ff]/10">
               <div className="flex flex-col sm:flex-row justify-between sm:items-center mb-6">
