@@ -44,16 +44,16 @@ import tnt_6 from "../../assets/tapntrade/tapntrade-6.png"
 
 function PortfolioSection() {
   const projects: Array<{ name: string; description: string; stacks: string[]; images: string[] }> = [
-    {
-      name: 'Sanote AI',
-      description: `Sanote AI is build to assist the medical student for helping in their exams, Major focus of this deliverable is to save the student's time, Focus on what actually matters and Learn the smart way, not the hard way.`,
-      stacks: ['Next.js', 'Express.js', 'PostgreSQL', 'OpenAi'],
-      images: [
-        sai_1.src,
-        sai_2.src,
-        sai_3.src,
-      ],
-    },
+    // {
+    //   name: 'Sanote AI',
+    //   description: `Sanote AI is build to assist the medical student for helping in their exams, Major focus of this deliverable is to save the student's time, Focus on what actually matters and Learn the smart way, not the hard way.`,
+    //   stacks: ['Next.js', 'Express.js', 'PostgreSQL', 'OpenAi'],
+    //   images: [
+    //     sai_1.src,
+    //     sai_2.src,
+    //     sai_3.src,
+    //   ],
+    // },
     {
       name: 'Agh Labs',
       description: 'A healthcare platform built with strict HIPAA compliance, ensuring secure handling of sensitive medical data. I developed both the frontend in React and the backend with Express, integrating OpenAI to provide prompt, intelligent responses. The system delivers a secure, reliable, and user-friendly experience tailored for medical professionals in the US.',
